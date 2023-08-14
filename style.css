@@ -15,7 +15,6 @@
   font-family: 'Open Sans', Arial, sans-serif;
   text-align: center;
   font-size: 70px;
-  font-style: normal;
   font-weight: 300;
   line-height: 1.028;
   color: #fff;
@@ -32,7 +31,6 @@
 .header-button {
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 14px;
-  font-style: normal;
   font-weight: 300;
   line-height: 2;
   letter-spacing: 1px;
@@ -41,13 +39,23 @@
 
   min-width: 180px;
   padding: 14px;
+  margin-right: 24px;
   box-sizing: border-box;
 
   background-color: transparent;
   border: 0.7px solid #fff;
   cursor: pointer;
+  transition: background-color 0.05s;
 }
 
-.header-button:not(:last-child) {
-  margin-right: 24px;
+.header-button:last-child {
+  margin-right: 0;
+}
+
+.header-button:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.header-button:active {
+  background-color: rgba(255, 255, 255, 0.1);
 }
